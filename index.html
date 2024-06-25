@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <title>Formulário Responsivo</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<style> 
+
+</style>
+<body>
+    <div class="form-container">
+        <form class="formulario" method="post" action="cad.php">
+            <h1>Cadastro de Corretor</h1>
+            <div class="inputs">
+                <!-- <label for="inputPequeno1">Input Pequeno 1:</label> -->
+                <div class="box-input">
+                    <input autofocus type="text" name="cpf" id="inputPequeno1" class="input input-pequeno"
+                        placeholder="Digite o seu CPF" maxlength="11"/>
+                    <!-- <label for="inputPequeno2">Input Pequeno 2:</label> -->
+                    <input type="text" id="inputPequeno2" name="creci" class="input input-pequeno"
+                        placeholder="Digite o seu CRECI" minlength="2"/>
+                </div>
+                <!-- <label for="inputGrande">Input Grande:</label> -->
+                <input type="text" id="inputGrande" name="nome" class="input input-grande" placeholder="Digite o seu NOME" minlength="2"/>
+            </div>
+
+            <button type="submit" class="botao">Enviar</button>
+        </form>
+    </div>
+
+    <div>
+    <h2>Lista de Corretores</h2>
+    <table id="corretoresTable">
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>Nome</td>
+                <td>CPF</td>
+                <td>Creci</td>
+                <td>Ações</td>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Os dados serão inseridos aqui dinamicamente -->
+        </tbody>
+    </table>
+    </div>
+</body>
+
+</html>
+

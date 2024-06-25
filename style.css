@@ -1,0 +1,133 @@
+  /* Estilos CSS */
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Roboto", sans-serif;
+  }
+
+  *:focus {
+      outline: none;
+  }
+
+  .form-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 4rem 7%;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+
+  }
+
+  h1 {
+      text-align: center;
+      margin-bottom: 16px;
+      font-size: clamp(2rem, 2vw, 6rem);
+      color: #4d5f73;
+  }
+
+  .inputs {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 0 auto;
+  }
+
+  input::placeholder {
+      font-size: 16px;
+  }
+
+  input {
+      font-size: 16px;
+  }
+
+  .box-input {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 100%;
+      width: 100%;
+      justify-content: center;
+      gap: 0 2rem;
+  }
+
+  #inputPequeno1 {
+      flex: 1 1 10rem;
+      border-radius: 4px;
+  }
+
+  #inputPequeno2 {
+      flex: 1 1 20rem;
+      border-radius: 4px;
+  }
+
+  .input-grande {
+      width: 100%;
+      border-radius: 4px;
+  }
+
+  .input {
+      padding: 12px 16px;
+      border: 1px solid #ccc;
+      margin-bottom: 15px;
+  }
+
+  .botao {
+      background-color: #4d5f73;
+      color: white;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      border-radius: 4px;
+      padding: 12px 16px;
+      transition: all .3s ease-in-out;
+      font-size: 16px;
+  }
+
+  .botao:hover {
+      background-color: #637a93;
+
+  }
+
+  h2 {
+
+      text-align: center;
+      margin-bottom: 16px;
+
+
+  }
+
+  table {
+      border: 1;
+      align-content: center;
+      width: 50%;
+      height: 50%;
+      border-collapse: collapse;
+      padding: 100px;
+      margin: auto;
+  }
+
+  table,
+  th,
+  td {
+      border: 2px solid rgb(140 140 140);
+
+  }
+
+  th,
+  td {
+      border: 1px solid rgb(160 160 160);
+      padding: 8px 10px;
+  }
+
+  @media (max-width: 768px) {
+      .inputs {
+          flex-direction: column;
+      }
+
+      .input-pequeno,
+      .input-grande {
+          width: 100%;
+      }
+  }
