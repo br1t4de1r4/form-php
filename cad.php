@@ -2,23 +2,17 @@
 
 include 'conexao.php';
 
-$servername = "localhost";
-$username = "root";
-$password = "2715";
-$dbname = "corretores_db";
+// removi a conexão daqui
+// não é necessario ja que vc ta fazendo a inclusão
+// coloquei echo no arquivo para ver oq ta acontecendo 
 
-// Cria a conexão
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Verifica a conexão
-if ($conn->connect_error) {
-    die("Conexão falhou: " . $conn->connect_error);
-}
-
-// Obtém os dados do formulário
 $nome = $_POST['nome'];
 $cpf = $_POST['cpf'];
 $creci = $_POST['creci'];
+echo "<br>";
+echo "Nome: $nome <br>";
+echo "CPF: $cpf <br>";
+echo "CRECI: $creci <br>";
 
 // Insere os dados no banco de dados
 $sql = "INSERT INTO corretores (name, cpf, creci) VALUES ('$nome', '$cpf', '$creci')";
@@ -30,4 +24,5 @@ if ($conn->query($sql) === TRUE) {
 }
 
 $conn->close();
+
 ?>
